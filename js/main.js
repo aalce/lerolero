@@ -1,5 +1,3 @@
-let $mainParagraph = $("#main-paragraph");
-
 const tab0 = [
 	"Caros amigos, ",
 	"Por outro lado, ",
@@ -31,7 +29,7 @@ const tab0 = [
 	"Desta maneira, ",
 	"O cuidado em identificar pontos críticos n",
 	"A certificação de metodologias que nos auxiliam a lidar com "
-	];
+];
 
 const tab1 = [
 	"a execução dos pontos do programa ",
@@ -64,7 +62,7 @@ const tab1 = [
 	"o entendimento das metas propostas ",
 	"o consenso sobre a necessidade de qualificação ",
 	"o julgamento imparcial das eventualidades "
-	];
+];
 
 const tab2 = [
 	"nos obriga à análise ",
@@ -97,7 +95,7 @@ const tab2 = [
 	"estende o alcance e a importância ",
 	"deve passar por modificações independentemente ",
 	"afeta positivamente a correta previsão "
-	];
+];
 
 const tab3 = [
 	"das condições financeiras e administrativas exigidas.",
@@ -130,23 +128,46 @@ const tab3 = [
 	"do retorno esperado a longo prazo.",
 	"do investimento em reciclagem técnica.",
 	"do remanejamento dos quadros funcionais."
-	];
+];
 
+const styles = [
+	"herzog",
+	"nietzsche",
+	"bringhurst",
+	"thin",
+	"nabokov",
+	"seneca",
+	"tufte",
+	"postnormal",
+	"slogan",
+	"darwin",
+	"headline",
+	"camus"
+];
 
-function randomPhrase(anArray) {
-	const index = Math.ceil(Math.random()*10) % anArray.length;
+let $mainParagraph = $("#main-paragraph");
+let $container = $("#lerolero-container");
+
+function randomElement(anArray) {
+	const index = Math.ceil(Math.random()*10*anArray.length) % anArray.length;
+	console.log(index);
 	return anArray[index];
 }
 
 function randomParagraph() {
 	return (
-		randomPhrase(tab0)+
-		randomPhrase(tab1)+
-		randomPhrase(tab2)+
-		randomPhrase(tab3)
-		);
+		randomElement(tab0)+
+		randomElement(tab1)+
+		randomElement(tab2)+
+		randomElement(tab3)
+	);
 }
 
 $("#generate-btn").click(function () {
 	$mainParagraph.text(randomParagraph());
+
+	$container.removeClass($container.attr("class"));
+	$container.addClass(randomElement(styles));
+	console.log($container.attr("class"));
+
 });
