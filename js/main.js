@@ -1,4 +1,4 @@
-const tab0 = [
+var tab0 = [
 	"Caros amigos, ",
 	"Por outro lado, ",
 	"Assim mesmo, ",
@@ -31,7 +31,7 @@ const tab0 = [
 	"A certificação de metodologias que nos auxiliam a lidar com "
 ];
 
-const tab1 = [
+var tab1 = [
 	"a execução dos pontos do programa ",
 	"a complexidade dos estudos efetuados ",
 	"a contínua expansão de nossa atividade ",
@@ -64,7 +64,7 @@ const tab1 = [
 	"o julgamento imparcial das eventualidades "
 ];
 
-const tab2 = [
+var tab2 = [
 	"nos obriga à análise ",
 	"cumpre um papel essencial na formulação ",
 	"exige a precisão e a definição ",
@@ -97,7 +97,7 @@ const tab2 = [
 	"afeta positivamente a correta previsão "
 ];
 
-const tab3 = [
+var tab3 = [
 	"das condições financeiras e administrativas exigidas.",
 	"das diretrizes de desenvolvimento para o futuro.",
 	"do sistema de participação geral.",
@@ -130,7 +130,7 @@ const tab3 = [
 	"do remanejamento dos quadros funcionais."
 ];
 
-const styles = [
+var styles = [
 	"herzog",
 	"nietzsche",
 	"bringhurst",
@@ -145,12 +145,16 @@ const styles = [
 	"camus"
 ];
 
-let $mainParagraph = $("#main-paragraph");
-let $container = $("#lerolero-container");
+var $window = $(window);
+var $body = $("body");
+var $button = $("#generate-btn");
+var $mainParagraph = $("#main-paragraph");
+var $container = $("#main-container");
+var $sample = $("#sample");
+var $footer = $("footer");
 
 function randomElement(anArray) {
-	const index = Math.ceil(Math.random()*10*anArray.length) % anArray.length;
-	console.log(index);
+	var index = Math.ceil(Math.random()*10*anArray.length) % anArray.length;
 	return anArray[index];
 }
 
@@ -163,11 +167,21 @@ function randomParagraph() {
 	);
 }
 
-$("#generate-btn").click(function () {
+function randomHome() {
 	$mainParagraph.text(randomParagraph());
+	var style = randomElement(styles)
+	$sample.removeClass($sample.attr("class")).addClass(style);
+	//$button.removeClass($button.attr("class")).addClass(style);
+	//$footer.removeClass($footer.attr("class")).addClass(style);
 
-	$container.removeClass($container.attr("class"));
-	$container.addClass(randomElement(styles));
-	console.log($container.attr("class"));
+	fitText();
+}
 
-});
+function fitText () {
+	$(".text").textfill();
+}
+
+$button.click(randomHome);
+$window.resize(fitText);
+
+randomHome();

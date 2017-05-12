@@ -3,15 +3,17 @@
 
 .herzog {
   background: #2A2C39;
-  padding: 250px 0; }
+  padding: 250px 0; 
+  font: 400 'cardo'; /*alterado por andré*/
+}
 
 .herzog .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 800px; 
+  /*width: 800px; */
   font: 400 36px/1.4 'cardo'; /*alterado por andré*/
 }
-
+/*
 .herzog h2 {
   color: #E9E9EB;
   font: 400 36px/1.4 'cardo';
@@ -29,19 +31,22 @@
 
 .herzog h3 em {
   font-style: italic; }
+*/
 
 /* nietzsche */
 
 .nietzsche {
   background: #ef4723;
-  padding: 100px 0; }
+  padding: 100px 0;
+  font: 400 'gentium book basic';
+}
 
 .nietzsche .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 800px;
+  /*width: 800px;*/
 }
-
+/*
 .nietzsche .excerpt {
   -moz-column-count: 2;
   -moz-column-gap: 50px;
@@ -70,7 +75,7 @@
   font: 800 20px/20px 'open sans';
   margin: 0 0 20px 0;
   text-align: center;
-    text-transform: uppercase; }
+  text-transform: uppercase; }
 
 .nietzsche h2 span {
   background: #ef4723;
@@ -83,25 +88,30 @@
   font: 400 16px/24px 'gentium book basic';
   margin: 0; }
 
+  */
+
   /* bringhurst */
 
 .bringhurst {
   background: #fcfaf2;
-  padding: 350px 0; }
+  padding: 350px 0;
+  font: 400 'vollkorn';
+}
 
 .bringhurst .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 410px; }
-
+  /*width: 410px;*/
+}
+/*
 .bringhurst h1 {
   color: #333;
   font: 400 20px/30px 'vollkorn';
   font-style: italic;
   margin: 0 0 10px 0;
   text-indent: -6px; }
-
-.bringhurst p {
+*/
+.bringhurst span {
   color: #c90707;
   font: 400 12px/18px 'vollkorn';
   letter-spacing: 1px;
@@ -112,13 +122,15 @@
 
 .thin {
   background: #0ac5f4;
-  padding: 200px 0; }
+  padding: 200px 0;
+  font: 100 'lato';
+}
 
 .thin .text {
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
-  width: 800px; 
+  /*width: 800px; */
   font: 100 92px/1 'lato'; /*alterado por andre*/
 }
 
@@ -150,14 +162,17 @@
 
 /* nabokov */
 .nabokov {
-background: rgba(133, 135, 141, 0.7);
-padding: 0 0 300px 0; }
+  background: rgba(133, 135, 141, 0.7);
+  padding: 0 0 300px 0;
+  font: 400 14px/1 'playfair display';
+}
 
 .nabokov .text {
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
-  width: 700px; }
+  /*width: 700px;*/
+}
 
 .nabokov h1 {
   color: #242526;
@@ -167,7 +182,8 @@ padding: 0 0 300px 0; }
   float: left;
   padding: 200px 0 0 0;
   margin: 0 0 -10px 0;
-  width: 142px; }
+  /*width: 142px;*/
+}
 
 .nabokov h1.second {
   border-left: 8px solid #242526;
@@ -182,23 +198,27 @@ padding: 0 0 300px 0; }
   font-weight: 900;
   margin: 0 0 0 172px; }
 
-.nabokov p {
+.nabokov span {
   color: #2e2f31;
   font: 400 14px/1 'playfair display';
   letter-spacing: 1px;
   margin: 18px 0 0 175px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 /* seneca */    
 .seneca {
   background: #caccc9;
-  padding: 150px 0; }
+  padding: 150px 0;
+  font: 400 'merriweather';
+}
 
 .seneca .text {
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
-  width: 820px; }
+/*width: 820px;*/
+}
 
 .seneca .body {
   -moz-column-count: 3;
@@ -227,19 +247,22 @@ padding: 0 0 300px 0; }
   color: #c3322f;
   font: 900 14px/22px 'lato'; }
 
-.seneca p {
+.seneca span {
   color: #333;
   font: 400 14px/22px 'merriweather'; }
 
 /* tufte */
 .tufte {
   background: #f8f5ef;
-  padding: 300px 0; }
+  padding: 300px 0;
+  font: 400 20px/30px 'vollkorn';
+}
 
 .tufte .text {
   margin: 0 auto;
   padding: 20px;
-  width: 860px; }
+/*  width: 860px; */
+}
 
 .tufte h1 {
   border-top: 5px solid #172bae;
@@ -263,7 +286,7 @@ padding: 0 0 300px 0; }
 .tufte h1 span.kern.push {
   margin: 0 0 0 7px; }
 
-.tufte p {
+.tufte span {
   color: #172bae;
   font: 400 20px/30px 'vollkorn';
   font-style: italic;
@@ -281,13 +304,15 @@ padding: 0 0 300px 0; }
 /* postnormal */
 .postnormal {
   background: #fff;
-  padding: 150px 0; }
+  padding: 150px 0;
+  font: normal 'pt mono';
+}
 
 .postnormal .text {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  width: 860px; 
+/*  width: 860px; */
   font: normal 13px/54px 'pt mono'; /*alterado por andre*/
 }
 
@@ -296,7 +321,8 @@ padding: 0 0 300px 0; }
   font: normal 10px/16px 'pt mono';
   opacity: 0.3;
   padding: 28px 0 0 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .postnormal h2 {
   color: #FFF700;
@@ -335,17 +361,19 @@ padding: 0 0 300px 0; }
 .postnormal ol.forward {
   margin: 0 60px; }
 
-/* logan */
+/* slogan */
 
 .slogan {
   background: #c00;
   padding: 325px 0;
-  text-align: center; }
+  text-align: center;
+  font: 400 'Gravitas One'; /*aterado por andre*/
+}
 
 .slogan .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 700px;
+/*  width: 700px;*/
   font: 400 76px/64px 'Gravitas One'; /*aterado por andre*/
 
 }
@@ -364,12 +392,14 @@ padding: 0 0 300px 0; }
 .darwin {
   background: #ede0ce;
   padding: 150px 0;
-  text-align: center; }
+  text-align: center;
+  font: 400 'old standard tt';
+}
 
 .darwin .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 750px;
+/*  width: 750px;*/
   font: 400 58px/58px 'old standard tt'; /*alterado por andre*/
 
 }
@@ -405,12 +435,14 @@ padding: 0 0 300px 0; }
 
 .headline {
   background: #000;
-  padding: 300px 0; }
+  padding: 300px 0;
+  font: 400 Abril Fatface;
+}
 
 .headline .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 470px;
+/*  width: 470px;*/
   font: 400 92px/84px Abril Fatface; /*alterado por andre*/
 
 }
@@ -428,7 +460,9 @@ padding: 0 0 300px 0; }
 .camus .text {
   margin: 0 auto;
   padding: 0 20px;
-  width: 205px; }
+/*  width: 205px;*/
+  font: 400 14px/18px 'pt serif';
+}
 
 .camus h1 {
   color: #222;
@@ -453,7 +487,7 @@ padding: 0 0 300px 0; }
   margin: 0;
   text-align: center; }
 
-.camus p {
+.camus span {
   color: #222;
   font: 400 14px/18px 'pt serif';
   text-align: justify;
