@@ -26,7 +26,7 @@ body {
 	position: fixed;
 	height: 70px;
 	width: 165px;
-	top: 10%;
+	top: 40px;
 	left: 30px;
 	font-size: 18px;
 	z-index: 1000;
@@ -43,14 +43,14 @@ body {
 #sample {
 	height: 100%;
 	width: 100%;
+	padding: 120px 8px 8px 8px;
 }
 
 .text {
 	position: absolute;
-	width: 100%;
-	height: 80%;
-	top: 10%;
-	padding: 0;
+	width: 90%;
+	height: 100%
+	left: 5%;
 }
 
 footer {
