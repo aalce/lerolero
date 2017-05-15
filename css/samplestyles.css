@@ -3,13 +3,11 @@
 
 .herzog {
   background: #2A2C39;
-  font: 400 36px/1.4 'cardo';
+  font: 400 36px 'cardo';
   color: #E9E9EB;
 }
 
 .herzog .text {
-  margin: 0 auto;
-  padding: 0 20px;
   text-align: left;
 }
 
@@ -17,7 +15,7 @@
 
 .nietzsche {
   background: #ef4723;
-  font: 400 60px/60px 'gentium book basic';
+  font: 400 60px 'gentium book basic';
   color: #222;
 }
 
@@ -26,15 +24,12 @@
 .bringhurst {
 	background: #fcfaf2;
 	color: #333;
-	font: 400 12px/18px 'vollkorn';
+	font: 400 12px 'vollkorn';
 	font-style: italic;
-	margin: 0 0 10px 0;
-	text-indent: -6px;
 }
 
 .bringhurst .text {
-	margin: 0 auto;
-	padding: 0 20px;
+	text-indent: -6px;
 }
 
 /* thin */
@@ -42,7 +37,7 @@
 .thin {
   background: #0ac5f4;
   padding: 200px 0;
-	font: 100 92px/1 'lato';
+	font: 100 92px 'lato';
 	margin: 0 auto;
   padding: 0 20px;
   text-align: left;
@@ -51,21 +46,19 @@
 }
 
 .thin .text {
-  margin: 0 auto;
-  padding: 0 20px;
   opacity: 0.8;
+  text-align: justify-all;
+
 }
 
 /* nabokov */
 .nabokov {
   background: rgba(133, 135, 141, 0.7);
   color: #242526;
-	font: italic 700 84px/1.2 'playfair display';
+	font: italic 700 84px 'playfair display';
 }
 
 .nabokov .text {
-  margin: 0 auto;
-  padding: 0 20px;
   text-align: left;
 }
 
@@ -73,12 +66,10 @@
 .seneca {
   background: #caccc9;
   color: #333;
-  font: 400 14px/22px 'merriweather'; 
+  font: 400 14px 'merriweather'; 
 }
 
 .seneca .text {
-  margin: 0 auto;
-  padding: 0 20px;
   text-align: left;
 }
 
@@ -86,26 +77,23 @@
 .tufte {
   background: #f8f5ef;
   color: #172bae;
-  font: 400 20px/30px 'vollkorn';
+  font: 400 20px 'vollkorn';
   font-style: italic;
 }
 
 .tufte .text {
-	padding: 0 20px;
   text-indent: 8px;
 }
 
 /* postnormal */
 .postnormal {
   background: #fff;
-	font: normal 13px/54px 'pt mono';
+	font: normal 13px 'pt mono';
 	color: #222;
 	text-transform: uppercase;
 }
 
 .postnormal .text {
-  margin: 0 auto;X
-  padding: 0 20px;
 	letter-spacing: 5px;
 }
 
@@ -118,11 +106,9 @@
 
 .slogan .text {
   color: #090909;
-  font: 400 76px/64px 'Gravitas One';
+  font: 400 76px 'Gravitas One';
   text-decoration: underline;
   letter-spacing: -4px;
-  margin: 0 0 20px 0;
-  padding: 0 4px;
   text-transform: uppercase;
 }
 
@@ -130,7 +116,7 @@
 .darwin {
   background: #ede0ce;
   text-align: center;
-  font: 400 14px/72px 'old standard tt';
+  font: 400 14px 'old standard tt';
   color: #161616;
   text-transform: uppercase;
 }
@@ -139,27 +125,19 @@
 
 .headline {
   background: #000;
-  padding: 300px 0;
-  font: 400 92px/84px Abril Fatface;
+  font: 400 92px Abril Fatface;
   color: #fff;
-}
-
-.headline .text {
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* camus */
 
 .camus {
   background: #fff;
-  font: 400 14px/18px 'pt serif';
+  font: 400 14px 'pt serif';
   color: #222;
 }
 
 .camus .text {
-  margin: 0 auto;
-  padding: 0 20px;
   text-align: justify;
   text-indent: 14px;
 }

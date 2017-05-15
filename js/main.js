@@ -154,7 +154,7 @@ var $sample = $("#sample");
 var $footer = $("footer");
 
 function randomElement(anArray) {
-	var index = Math.ceil(Math.random()*10*anArray.length) % anArray.length;
+	var index = Math.floor(Math.random()*anArray.length);
 	return anArray[index];
 }
 
@@ -171,17 +171,22 @@ function randomHome() {
 	$mainParagraph.text(randomParagraph());
 	var style = randomElement(styles)
 	$sample.removeClass($sample.attr("class")).addClass(style);
-	//$button.removeClass($button.attr("class")).addClass(style);
-	//$footer.removeClass($footer.attr("class")).addClass(style);
+	// $button.removeClass($button.attr("class")).addClass(style);
+	// $footer.removeClass($footer.attr("class")).addClass(style);
 
 	fitText();
 }
 
+function fitTextWraper () {
+	setTimeout(fitText, 200);
+}
+
 function fitText () {
-	$(".text").textfill();
+	$("#sample").textfill({maxFontPixels: 70});
+	console.log("FIT!");
 }
 
 $button.click(randomHome);
-$window.resize(fitText);
+$window.resize(fitTextWraper);
 
 randomHome();
