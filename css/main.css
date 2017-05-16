@@ -11,7 +11,7 @@ html, body {
 
 body {
 	position: relative;
-	background-color: lightgrey;
+	background-color: #383846;
 	padding-top: 0; 
 	padding-bottom: 0;
 	width: 100%;
@@ -19,32 +19,32 @@ body {
 }
 
 .container {
-	height: 100%;
-}
-
-#generate-btn {
-	position: fixed;
-	height: 70px;
-	width: 165px;
-	top: 40px;
-	left: 30px;
-	font-size: 18px;
-	z-index: 1000;
-	text-align: center;
-}
-
-.container {
 	position: absolute;
 	top: 5%;
 	overflow: hidden;
-	height: 80%;
+	height: 85%;
 	width: 100%;
 }
 
 #sample {
+	position: relative;
 	height: 100%;
 	width: 100%;
-	padding: 120px 20px 20px 20px;
+	padding: 90px 20px 20px 20px;
+}
+
+
+#generate-btn {
+	position: absolute;
+	height: 60px;
+	width: 100px;
+	top: 15px;
+	left: 15px;
+	z-index: 1000;
+	background-color: #383846;
+	color: white;
+	font-size: 18px;
+	text-align: center;
 }
 
 .text {
@@ -52,13 +52,26 @@ body {
 }
 
 footer {
-	background-color: grey;
-	width: 100%;
-	height: 70px;
-	min-height: 50px;
-	font-size: 14px;
-	padding: 20px;
 	position: absolute;
 	bottom: 0;
+	height: 38px;
+	width: 100%;
+	padding: 0 10px;
+	background-color: #f5c115;
+}
+
+footer img {
+	display: block;
+	float: left;
+	padding: 4px 2px;
+	height: 100%;
+}
+
+footer p {
+	color: #383846;
+	font-size: 14px;
 	text-align: left;
+	height: 100%;
+	padding: 12px 6px;
+	display: inline-block;
 }

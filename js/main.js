@@ -174,19 +174,15 @@ function randomHome() {
 	// $button.removeClass($button.attr("class")).addClass(style);
 	// $footer.removeClass($footer.attr("class")).addClass(style);
 
-	fitText();
-}
-
-function fitTextWraper () {
-	setTimeout(fitText, 200);
+	setTimeout(fitText, 100);
 }
 
 function fitText () {
-	$("#sample").textfill({maxFontPixels: 70});
+	$("#sample").textfill({maxFontPixels: 0});
 	console.log("FIT!");
 }
 
 $button.click(randomHome);
-$window.resize(fitTextWraper);
+$window.resize(fitText);
 
 randomHome();
