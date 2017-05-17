@@ -1,38 +1,30 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html {
-	padding: 0;
-}
-
 html, body {
 	height: 100%
 }
 
 body {
-	position: relative;
-	background-color: #383846;
-	padding-top: 0; 
-	padding-bottom: 0;
-	width: 100%;
-	overflow: hidden;
-}
-
-.container {
 	position: absolute;
-	top: 5%;
-	overflow: hidden;
-	height: 85%;
 	width: 100%;
+	overflow: hidden;
+	padding: 0;
 }
 
+#main-container {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+/*
 #sample {
 	position: relative;
 	height: 100%;
 	width: 100%;
 	padding: 90px 20px 20px 20px;
 }
-
+*/
 
 #generate-btn {
 	position: absolute;
@@ -70,8 +62,13 @@ footer img {
 footer p {
 	color: #383846;
 	font-size: 14px;
-	text-align: left;
+	font-family: Signika, sans-serif;
+/*	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	text-align: left;*/
 	height: 100%;
 	padding: 12px 6px;
+	margin: 0;
 	display: inline-block;
 }

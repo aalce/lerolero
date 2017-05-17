@@ -148,9 +148,10 @@ var styles = [
 var $window = $(window);
 var $body = $("body");
 var $button = $("#generate-btn");
+var $mainContainer = $("#main-container");
+var $textContainer = $("#text-container");
 var $mainParagraph = $("#main-paragraph");
-var $container = $("#main-container");
-var $sample = $("#sample");
+// var $sample = $("#sample");
 var $footer = $("footer");
 
 function randomElement(anArray) {
@@ -170,7 +171,7 @@ function randomParagraph() {
 function randomHome() {
 	$mainParagraph.text(randomParagraph());
 	var style = randomElement(styles)
-	$sample.removeClass($sample.attr("class")).addClass(style);
+	$mainContainer.removeClass($mainContainer.attr("class")).addClass(style);
 	// $button.removeClass($button.attr("class")).addClass(style);
 	// $footer.removeClass($footer.attr("class")).addClass(style);
 
@@ -178,7 +179,7 @@ function randomHome() {
 }
 
 function fitText () {
-	$("#sample").textfill({maxFontPixels: 0});
+	$textContainer.textfill({maxFontPixels: 0});
 	console.log("FIT!");
 }
 

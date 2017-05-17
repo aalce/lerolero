@@ -7,6 +7,14 @@
   color: #E9E9EB;
 }
 
+.herzog #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+}
+
 .herzog .text {
   text-align: justify-all;
 }
@@ -17,6 +25,17 @@
   background: #ef4723;
   font: 400 60px 'gentium book basic';
   color: #222;
+}
+
+.nietzsche #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+}
+
+.nietzsche .text {
   text-align: left;
 }
 
@@ -27,6 +46,14 @@
 	color: #333;
 	font: 400 12px 'vollkorn';
 	font-style: italic;
+}
+
+.bringhurst #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
 }
 
 .bringhurst .text {
@@ -40,10 +67,16 @@
   padding: 200px 0;
 	font: 100 92px 'lato';
 	margin: 0 auto;
-  padding: 0 20px;
-  text-align: left;
   color: #fff;
   text-transform: uppercase;
+}
+
+.thin #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
 }
 
 .thin .text {
@@ -59,6 +92,14 @@
 	font: italic 700 84px 'playfair display';
 }
 
+.nabokov #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%; 
+}
+
 .nabokov .text {
   text-align: justify-all;
 }
@@ -68,6 +109,14 @@
   background: #caccc9;
   color: #333;
   font: 400 14px 'merriweather'; 
+}
+
+.seneca #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%; 
 }
 
 .seneca .text {
@@ -82,6 +131,14 @@
   font-style: italic;
 }
 
+.tufte #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;  
+}
+
 .tufte .text {
 	margin-left: 70px;
 }
@@ -94,6 +151,14 @@
 	text-transform: uppercase;
 }
 
+.postnormal #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;  
+}
+
 .postnormal .text {
 	letter-spacing: 5px;
 	text-align: justify-all;
@@ -104,11 +169,19 @@
 .slogan {
   background: #c00;
   text-align: center;
+  font: 400 76px 'Gravitas One';
+}
+
+.slogan #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%; 
 }
 
 .slogan .text {
   color: #090909;
-  font: 400 76px 'Gravitas One';
   text-decoration: underline;
   letter-spacing: -4px;
   text-transform: uppercase;
@@ -117,10 +190,17 @@
 /* darwin */
 .darwin {
   background: #ede0ce;
-  text-align: center;
   font: 400 14px 'old standard tt';
   color: #161616;
   text-transform: uppercase;
+}
+
+.darwin #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;  
 }
 
 /* headline */
@@ -129,6 +209,17 @@
   background: #000;
   font: 400 92px Abril Fatface;
   color: #fff;
+}
+
+.headline #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;  
+}
+
+.headline .text {
   text-align: center;
 }
 
@@ -138,6 +229,14 @@
   background: #fff;
   font: 400 14px 'pt serif';
   color: #222;
+}
+
+.camus #text-container {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;  
 }
 
 .camus .text {
