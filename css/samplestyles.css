@@ -1,3 +1,10 @@
+/****************
+  SAMPLES STYLES
+*****************/
+
+/***********
+Mobile (portrait) first!
+/***********
 
 /* herzog */
 
@@ -8,11 +15,12 @@
 }
 
 .herzog #text-container {
-  position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;
+  position: relative;
+  height: 240px;
+  width: 80%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .herzog .text {
@@ -28,15 +36,16 @@
 }
 
 .nietzsche #text-container {
-  position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nietzsche .text {
-  text-align: left;
+  text-align: justify;
 }
 
   /* bringhurst */
@@ -49,15 +58,17 @@
 }
 
 .bringhurst #text-container {
-  position: absolute;
-  height: 80%;
+  position: relative;
+  height: 120px;
   width: 90%;
-  top: 10%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
 
 .bringhurst .text {
 	text-indent: -6px;
+  text-align: right;
 }
 
 /* thin */
@@ -73,16 +84,14 @@
 
 .thin #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
+  height: 75%;
+  width: 70%;
   top: 10%;
-  left: 5%;
+  left: 20%;
 }
 
 .thin .text {
-  opacity: 0.8;
   text-align: left;
-
 }
 
 /* nabokov */
@@ -94,14 +103,15 @@
 
 .nabokov #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%; 
+  height: 70%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 .nabokov .text {
-  text-align: justify-all;
+  text-align: left;
 }
 
 /* seneca */    
@@ -113,10 +123,11 @@
 
 .seneca #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%; 
+  height: 60%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .seneca .text {
@@ -242,4 +253,100 @@
 .camus .text {
   text-align: left;
   text-indent: 60px;
+}
+
+/**********
+Landscape
+***********/
+
+@media screen and (orientation: landscape) {
+  .herzog #text-container {
+    height: 100px;
+    width: 75%;
+    left: 55%;
+  }
+
+  .nietzsche #text-container {
+    height: 120px;
+    width: 120px;
+  }
+
+  .bringhurst #text-container {
+    height: 120px;
+    width: 65%;
+    top: 50%;
+    left: 95%;
+    transform: translate(-100%, -50%);
+  }
+
+  .thin #text-container {
+    height: 70%;
+    top: 13%;
+  }
+
+  .nabokov #text-container {
+    width: 65%; 
+    top: 45%;
+    left: 50%; 
+  }
+
+  .seneca #text-container {
+    position: absolute; /
+    height: 40%;
+    width: 55%;
+    left: 20%;
+    transform: translate(0, -50%);
+  }
+
+  .seneca .text {
+    text-align: justify;
+  }
+}
+
+/*******
+Anything larger than a smartphone
+********/
+/********
+acerta esse min-width, vc nao quer que tablets se comportem
+como smartphones
+*********/
+
+@media screen and (min-width: 700px) {
+  .herzog #text-container {
+    height: 240px;
+    left: 50%;
+  }
+
+  .nietzsche #text-container {
+    height: 400px;
+    width: 400px;
+  }
+
+  .bringhurst #text-container {
+    width: 45%;
+    left: 50%;
+    transform: translate(0, -100%);
+  }
+
+  .thin #text-container {
+    width: 60%;
+    top: 83px;
+    left: 123px;
+  }
+
+  .nabokov #text-container {
+    height: 30%;
+    width: 55%;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, -50%);
+  }
+
+  .seneca #text-container {
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, -50%);
+  }
 }
