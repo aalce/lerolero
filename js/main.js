@@ -131,18 +131,18 @@ var tab3 = [
 ];
 
 var styles = [
-	// "herzog",
-	// "nietzsche",
-	// "bringhurst",
-	// "thin",
-	// "nabokov",
+	"herzog",
+	"nietzsche",
+	"bringhurst",
+	"thin",
+	"nabokov",
 	"seneca",
-	// "tufte",
-	// "postnormal",
-	// "slogan",
-	// "darwin",
-	// "headline",
-	// "camus"
+	"tufte",
+	"postnormal",
+	"slogan",
+	"darwin",
+	"headline",
+	"camus"
 ];
 
 var $window = $(window);

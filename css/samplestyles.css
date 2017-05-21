@@ -144,14 +144,15 @@ Mobile (portrait) first!
 
 .tufte #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;  
+  height: 25%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
 .tufte .text {
-	margin-left: 70px;
+  text-align: left;
 }
 
 /* postnormal */
@@ -164,10 +165,11 @@ Mobile (portrait) first!
 
 .postnormal #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;  
+  height: 75%;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
 .postnormal .text {
@@ -186,9 +188,10 @@ Mobile (portrait) first!
 .slogan #text-container {
   position: absolute;
   height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%; 
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 .slogan .text {
@@ -208,10 +211,15 @@ Mobile (portrait) first!
 
 .darwin #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;  
+  height: 30%;
+  width: 80%;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -100%);  
+}
+
+.darwin .text {
+  text-align: center;
 }
 
 /* headline */
@@ -224,10 +232,11 @@ Mobile (portrait) first!
 
 .headline #text-container {
   position: absolute;
-  height: 80%;
-  width: 90%;
-  top: 10%;
-  left: 5%;  
+  height: 40%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
 .headline .text {
@@ -246,13 +255,14 @@ Mobile (portrait) first!
   position: absolute;
   height: 80%;
   width: 90%;
-  top: 10%;
-  left: 5%;  
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, 0);  
 }
 
 .camus .text {
   text-align: left;
-  text-indent: 60px;
+  text-indent: 20px;
 }
 
 /**********
@@ -300,6 +310,54 @@ Landscape
 
   .seneca .text {
     text-align: justify;
+  }
+
+  .tufte #text-container {
+    position: absolute;/* */
+    height: 50%;/*  */
+    width: 300px;/* */
+    top: 45%;/* */
+    left: 120px;/* */
+    transform: translate(0, -50%);/**/
+  }
+
+  .postnormal #text-container {
+    position: absolute;
+    height: 65%;
+    width: 80%;
+    top: 50%;
+    left: 90px;
+    transform: translate(0, -50%);  
+  }
+
+  .slogan #text-container {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 90px;
+    transform: translate(0, -50%); 
+  }
+
+  .darwin #text-container {
+    height: 40%;
+    width: 70%;
+    top: 20%;
+    left: 20%;
+    transform: translate(0, 0);
+  }
+
+  .headline #text-container {
+    height: 60%;
+    width: 70%;
+    left: 55%;
+  }
+  .camus #text-container {
+    height: 65%;
+    width: 30%;
+    top: 12%;
+    left: 20%;
+    transform: translate(0, 0);  
   }
 }
 
@@ -349,4 +407,50 @@ como smartphones
     left: 15%;
     transform: translate(0, -50%);
   }
+
+  .tufte #text-container {
+    position: absolute;
+    height: 25%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+  }
+
+  .postnormal #text-container {
+    position: absolute;
+    height: 75%;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+  }
+
+  .slogan #text-container {
+    position: absolute;
+    height: 35%;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .darwin #text-container {
+    height: 30%;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -100%);  
+  }
+
+  .headline #text-container {
+    height: 40%;
+    width: 80%;
+    left: 50%;
+  }
+
+    .camus #text-container {
+      top: 50%;
+      transform: translate(0, -50%);  
+    }
 }
