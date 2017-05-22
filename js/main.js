@@ -172,9 +172,6 @@ function randomHome() {
 	$mainParagraph.text(randomParagraph());
 	var style = randomElement(styles)
 	$mainContainer.removeClass($mainContainer.attr("class")).addClass(style);
-	// $button.removeClass($button.attr("class")).addClass(style);
-	// $footer.removeClass($footer.attr("class")).addClass(style);
-
 	setTimeout(fitText, 100);
 }
 
@@ -184,6 +181,11 @@ function fitText () {
 }
 
 $button.click(randomHome);
+$(document).keypress(function (event){
+	if (event.which == 32) {
+		randomHome();
+	}
+});
 $window.resize(fitText);
 
 randomHome();
