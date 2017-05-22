@@ -131,18 +131,18 @@ var tab3 = [
 ];
 
 var styles = [
-	"herzog",
-	"nietzsche",
-	"bringhurst",
-	// "thin", // Uma bosta de estilo para smartphones. Considere eliminar
-	"nabokov",
-	"seneca",
-	"tufte",
+	// "herzog",
+	// "nietzsche",
+	// "bringhurst",
+	// // "thin", // Uma bosta de estilo para smartphones. Considere eliminar
+	// "nabokov",
+	// "seneca",
+	// "tufte",
 	"postnormal",
-	"slogan",
-	"darwin",
-	"headline",
-	"camus"
+	// "slogan",
+	// "darwin",
+	// "headline",
+	// "camus"
 ];
 
 var $window = $(window);
@@ -182,6 +182,7 @@ function fitText () {
 
 $button.click(randomHome);
 $(document).keypress(function (event){
+	//barra de espaço gera novo lerolero
 	if (event.which == 32) {
 		randomHome();
 	}

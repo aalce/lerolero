@@ -409,9 +409,9 @@ Anything larger than a smartphone
 
   .postnormal #text-container {
     position: absolute;
-    height: 75%;
+    height: 70%;
     width: 85%;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);  
   }
