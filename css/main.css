@@ -35,6 +35,8 @@ body {
 	z-index: 1000;
 	background-color: #383846;
 	color: white;
+	border-radius: 10%;
+	border-width: 0;
 	font-size: 12px;
 	text-align: center;
 }

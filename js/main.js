@@ -134,7 +134,7 @@ var styles = [
 	"herzog",
 	"nietzsche",
 	"bringhurst",
-	"thin",
+	// "thin", // Uma bosta de estilo para smartphones. Considere eliminar
 	"nabokov",
 	"seneca",
 	"tufte",

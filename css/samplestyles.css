@@ -37,9 +37,9 @@ Mobile (portrait) first!
 
 .nietzsche #text-container {
   position: relative;
-  height: 350px;
-  width: 350px;
-  top: 45%;
+  height: 60%;
+  width: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -63,7 +63,7 @@ Mobile (portrait) first!
   width: 90%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -75%);
 }
 
 .bringhurst .text {
@@ -86,8 +86,9 @@ Mobile (portrait) first!
   position: absolute;
   height: 75%;
   width: 70%;
-  top: 10%;
+  top: 50%;
   left: 20%;
+  transform: translate(0, -50%);
 }
 
 .thin .text {
@@ -187,8 +188,8 @@ Mobile (portrait) first!
 
 .slogan #text-container {
   position: absolute;
-  height: 80%;
-  width: 70%;
+  height: 75%;
+  width: 65%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -253,9 +254,9 @@ Mobile (portrait) first!
 
 .camus #text-container {
   position: absolute;
-  height: 80%;
+  height: 75%;
   width: 90%;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, 0);  
 }
@@ -292,6 +293,7 @@ Landscape
   .thin #text-container {
     height: 70%;
     top: 13%;
+    transform: translate(0, 0%);
   }
 
   .nabokov #text-container {
@@ -316,9 +318,9 @@ Landscape
     position: absolute;
     height: 65%;
     width: 80%;
-    top: 50%;
+    top: 10%;
     left: 17%;
-    transform: translate(0, -50%);  
+    transform: translate(0, 0);  
   }
 
   .slogan #text-container {
@@ -377,6 +379,7 @@ Anything larger than a smartphone
     width: 60%;
     top: 83px;
     left: 123px;
+    transform: translate(0, 0);
   }
 
   .nabokov #text-container {
