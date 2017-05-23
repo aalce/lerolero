@@ -131,18 +131,18 @@ var tab3 = [
 ];
 
 var styles = [
-	// "herzog",
-	// "nietzsche",
-	// "bringhurst",
-	// // "thin", // Uma bosta de estilo para smartphones. Considere eliminar
-	// "nabokov",
-	// "seneca",
-	// "tufte",
+	"herzog",
+	"nietzsche",
+	"bringhurst",
+	// "thin", // Uma bosta de estilo para smartphones. Considere eliminar
+	"nabokov",
+	"seneca",
+	"tufte",
 	"postnormal",
-	// "slogan",
-	// "darwin",
-	// "headline",
-	// "camus"
+	"slogan",
+	"darwin",
+	"headline",
+	"camus"
 ];
 
 var $window = $(window);
