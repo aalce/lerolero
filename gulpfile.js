@@ -6,7 +6,8 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
-cleanCSS = require('gulp-clean-css');
+cleanCSS = require('gulp-clean-css'),
+   pages = require('gulp-gh-pages');
 
 gulp.task('concatScripts', function() {
 	return gulp.src([
@@ -79,10 +80,7 @@ gulp.task('build', ['minifyScripts', 'minifyCss'], function() {
 	.pipe(gulp.dest('build/js/vendor'));
 });
 
-
-
-
-
-
-
-
+gulp.task('deploy', function (){
+	return gulp.src('build/**/*')
+	.pipe(pages());
+})
