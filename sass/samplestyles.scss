@@ -7,12 +7,13 @@ Mobile (portrait) first!
 /***********
 
 /* herzog */
+@import 'fonts.scss';
 
 .herzog {
   background: #2A2C39;
-  font: italic 400 36px 'cardo';
   color: #E9E9EB;
-
+  font-family: 'cardoitalic';
+  font-size: 36px;
 
    #text-container {
     position: relative;
@@ -32,8 +33,9 @@ Mobile (portrait) first!
 
 .nietzsche {
   background: #ef4723;
-  font: 400 60px 'gentium book basic';
   color: #222;
+  font-family: 'gentium_book_basicregular';
+  font-size: 60px;
 
   #text-container {
     position: relative;
@@ -54,8 +56,8 @@ Mobile (portrait) first!
 .bringhurst {
 	background: #fcfaf2;
 	color: #333;
-	font: 400 12px 'vollkorn';
-	font-style: italic;
+	font-family: 'vollkornitalic';
+  font-size: 12px;
 
   #text-container {
     position: relative;
@@ -68,17 +70,18 @@ Mobile (portrait) first!
 
   .text {
   	text-indent: -6px;
-  text-align: right;
+    text-align: right;
   }
 }
 /* thin */
 
 .thin {
   background: #0ac5f4;
+  color: #fff;
   padding: 200px 0;
 	font: 100 92px 'lato';
+  font-size: 92px;
 	margin: 0 auto;
-  color: #fff;
   text-transform: uppercase;
 
   #text-container {
@@ -99,7 +102,8 @@ Mobile (portrait) first!
 .nabokov {
   background: rgba(133, 135, 141, 0.7);
   color: #242526;
-	font: italic 700 84px 'playfair display';
+	font-family: 'playfair_displaybold_italic';
+  font-size: 84px;
 
 
   #text-container {
@@ -120,7 +124,8 @@ Mobile (portrait) first!
 .seneca {
   background: #caccc9;
   color: #333;
-  font: 400 14px 'merriweather'; 
+  font-family: 'merriweatherregular';
+  font-size: 14px;
 
   #text-container {
     position: absolute;
@@ -140,8 +145,8 @@ Mobile (portrait) first!
 .tufte {
   background: #f8f5ef;
   color: #172bae;
-  font: 400 20px 'vollkorn';
-  font-style: italic;
+  font-family: 'vollkornitalic';
+  font-size: 20px;
   
   #text-container {
     position: absolute;
@@ -160,8 +165,9 @@ Mobile (portrait) first!
 /* postnormal */
 .postnormal {
   background: #fff;
-	font: normal 13px 'pt mono';
-	color: #222;
+  color: #222;
+	font-family: 'pt_monoregular';
+  font-size: 13px;
 	text-transform: uppercase;
 
   #text-container {
@@ -183,8 +189,10 @@ Mobile (portrait) first!
 
 .slogan {
   background: #c00;
+  color: #090909;
   text-align: center;
-  font: 400 76px 'Gravitas One';
+  font-family: 'gravitas_oneregular';
+  font-size: 76px;
 
   #text-container {
     position: absolute;
@@ -196,7 +204,6 @@ Mobile (portrait) first!
   }
 
   .text {
-    color: #090909;
     text-decoration: underline;
     letter-spacing: -4px;
     text-transform: uppercase;
@@ -206,8 +213,9 @@ Mobile (portrait) first!
 /* darwin */
 .darwin {
   background: #ede0ce;
-  font: 400 14px 'old standard tt';
   color: #161616;
+  font-family: 'old_standard_ttregular';
+  font-size: 14px;
   text-transform: uppercase;
 
   #text-container {
@@ -228,8 +236,9 @@ Mobile (portrait) first!
 
 .headline {
   background: #000;
-  font: 400 92px Abril Fatface;
   color: #fff;
+  font-family: 'abril_fatfaceregular';
+  font-size: 92px;
 
   #text-container {
     position: absolute;
@@ -249,8 +258,9 @@ Mobile (portrait) first!
 
 .camus {
   background: #fff;
-  font: 400 14px 'pt serif';
   color: #222;
+  font-family: 'pt_serifregular';
+  font-size: 14px;
 
   #text-container {
     position: absolute;
