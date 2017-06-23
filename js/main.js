@@ -169,10 +169,12 @@ function randomParagraph() {
 }
 
 function randomHome() {
+	$mainParagraph.fadeOut(0);
 	$mainParagraph.text(randomParagraph());
-	var style = randomElement(styles)
+	var style = randomElement(styles);
 	$mainContainer.removeClass($mainContainer.attr("class")).addClass(style);
 	setTimeout(fitText, 100);
+	$mainParagraph.fadeIn(400);
 }
 
 function fitText () {

@@ -413,7 +413,8 @@ body {
 #main-container {
   overflow: hidden;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  transition: background-color 0.4s linear; }
 
 #generate-btn {
   position: absolute;
